@@ -1,19 +1,23 @@
-import Link from "next/link";
+import { Flex, Spacer, UnorderedList, ListItem } from "@chakra-ui/react";
+import { ChakraUIPageLink } from "./ChakraUIPageLink";
 
 export const Navbar = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <Link href="/">Oboe is Cool</Link>
-        </li>
-        <li>
-          <Link href="/vendors">Vendors</Link>
-        </li>
-        <li>
-          <Link href="/events">Events</Link>
-        </li>
-      </ul>
+      <UnorderedList styleType="none">
+        <Flex>
+          <ListItem>
+            <ChakraUIPageLink link="/" linkText="Oboe is Cool" />
+          </ListItem>
+          <Spacer />
+          <ListItem mr={8}>
+            <ChakraUIPageLink link="/vendors" linkText="Vendors" />
+          </ListItem>
+          <ListItem>
+            <ChakraUIPageLink link="/events" linkText="Events" />
+          </ListItem>
+        </Flex>
+      </UnorderedList>
     </nav>
   );
 };
