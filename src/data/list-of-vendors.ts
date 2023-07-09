@@ -18,7 +18,7 @@ export const listOfVendors: Vendor[] = [
     name: "Carlos Oboe",
     url: "https://carlosoboe.com/",
     description:
-      "Carlos is master repairmen and retailer of oboes and English horns. Through his decades of experience, he will help you find your next oboe.",
+      "Carlos is a master repairmen and retailer of oboes and English horns. Through his decades of experience, he will help you find your next oboe.",
     type: "instruments",
   },
   {
