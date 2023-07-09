@@ -21,8 +21,8 @@ const Vendors: NextPage = () => {
   const [filteredVendorsList, setFilteredVendorsList] = useState(listOfVendors);
 
   const handleFilterChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const filtered = filterVendors(listOfVendors, event.target.value);
-    setFilteredVendorsList(filtered);
+    const filteredList = filterVendors(listOfVendors, event.target.value);
+    setFilteredVendorsList(filteredList);
   };
   return (
     <>
