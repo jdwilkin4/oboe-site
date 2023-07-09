@@ -15,7 +15,7 @@ export const ComingSoon = ({ title }: Props) => {
           borderRadius={4}
           mt={8}
           p={4}
-          bg="#2464ec"
+          bg="accentColors.purple"
         >
           {title} Page
         </Heading>

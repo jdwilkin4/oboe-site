@@ -19,7 +19,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
-    "@chakra-ui/react": "2.3.5",
+    "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "11",
     "@emotion/styled": "11",
     "framer-motion": "6",
