@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Navbar } from "../components/Navbar";
-import { ComingSoon } from "../components/ComingSoon";
+import { HeroSection } from "../components/Hero";
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Navbar />
-        <ComingSoon title="All things oboe" />
+        <HeroSection />
       </main>
     </div>
   );
