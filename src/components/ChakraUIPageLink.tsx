@@ -3,13 +3,22 @@ import { Link } from "@chakra-ui/react";
 
 type ChakraUIPageLinkProps = {
   link: string;
+  linkColor: string;
   linkText: string;
+  size?: string;
 };
 
-export const ChakraUIPageLink = ({ link, linkText }: ChakraUIPageLinkProps) => {
+export const ChakraUIPageLink = ({
+  link,
+  linkColor,
+  linkText,
+  size,
+}: ChakraUIPageLinkProps) => {
   return (
     <NextLink href={link} passHref>
-      <Link>{linkText}</Link>
+      <Link color={linkColor} fontSize={size ? size : "1rem"}>
+        {linkText}
+      </Link>
     </NextLink>
   );
 };
